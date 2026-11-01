@@ -1,0 +1,12 @@
+name: Free Runner Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Check runner
+        run: echo "FREE_RUNNER_TEST_OK"
